@@ -12,7 +12,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= image_tag(@idea.picture_url, :width => 60) if @idea.picture.present? %>
+  <%= image_tag(@idea.picture_url(:thumb)) if @idea.picture.present? %>
   <h3>Comments</h3>
   <% @idea.comments.each do |comment| %>
   <div>
