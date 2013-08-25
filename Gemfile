@@ -55,5 +55,8 @@ end
 gem 'carrierwave'
 gem 'mini_magick', '3.5.0'
 gem 'foreigner'
+gem 'protected_attributes'
+gem 'devise'
+
 
 
