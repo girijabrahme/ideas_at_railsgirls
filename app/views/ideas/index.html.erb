@@ -31,5 +31,5 @@
 </table>
 
 <br>
-<% user_path_to_new_idea = current_user.nil? ? new_user_registration_path : new_idea_path %>
-<%= link_to 'Spark Idea', user_path_to_new_idea, :class => "btn btn-primary" %>
+
+<%= link_to 'Spark Idea', new_idea_path, :class => "btn btn-primary" %>
