@@ -21,10 +21,8 @@
         <td><%= idea.description %></td>
         <td><%= image_tag idea.picture_url(:thumb) if idea.picture? %></td>
         <td><%= link_to 'Show', idea, :class => "btn btn-mini" %></td>
-        <% if user_signed_in? %>
-          <td><%= link_to 'Edit', edit_idea_path(idea), :class => "btn btn-mini" %></td>
-           <td><%= link_to 'Destroy', idea, :class => "btn btn-mini", method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
+        <td><%= link_to 'Edit', edit_idea_path(idea), :class => "btn btn-mini" %></td>
+        <td><%= link_to 'Destroy', idea, :class => "btn btn-mini", method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
